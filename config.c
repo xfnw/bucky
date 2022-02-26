@@ -37,7 +37,7 @@ const char *mime_type_from_ext(char *ext)
 	else if (strcmp(ext, ".ogg") == 0)
 		return "audio/ogg";
 
-	return "application/octet-stream";
+	return "text/plain";
 }
 
 /* Return the HTTP request path to the item type tag icon */

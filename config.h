@@ -14,7 +14,7 @@
 /* Hostname of your Gopher server (must match buckd's $MYHOST, does
  * NOT need to match the hostname of the HTTP server!)
  */
-#define MY_HOST "khzae.net"
+#define MY_HOST "gopher.owen.bellz.org"
 
 /* Port of your Gopher server (must match buckd's $MYPORT) */
 #define MY_PORT 70
@@ -39,7 +39,7 @@
  * individual IPs of proxy users, otherwise they will all appear as the
  * server the proxy is running on.
  */
-/*#define USE_SOCKETS*/
+#define USE_SOCKETS
 
 /* Path to Bucktooth daemon */
 #define BUCKD "/usr/local/bin/buckd"
@@ -76,10 +76,10 @@
 #define USE_REWRITE
 
 /* If USE_REWRITE is defined, this is the fake 'root' */
-#define REWRITE_ROOT "/"
+#define REWRITE_ROOT "/g/"
 
 /* Reference an external CSS file to apply custom styling */
-/*#define EXTERNAL_CSS "/style.css"*/
+#define EXTERNAL_CSS "/style.css"
 
 /* Show navigational bars on the HTML page */
 #define SHOW_NAVBARS

@@ -408,20 +408,20 @@ void print_top_nav(char type, char *selector)
 	#ifdef GOPHER_ICONS
 		printf("<img class=\"gicon\" src=\"%s\" alt=\"/\"> ", gopher_item_icon(GOPHER_ITEM_DIRECTORY));
 	#endif
-	printf("..");
-	printf("</a>\r\n");
-
-	printf("<a id=\"navroot\" title=\"go to root of server\" ");
-	#ifdef USE_REWRITE
-		printf("href=\"%s\">", REWRITE_ROOT);
-	#else
-		printf("href=\"?\">");
-	#endif
-	#ifdef GOPHER_ICONS
-		printf("<img class=\"gicon\" src=\"%s\" alt=\"/\"> ", gopher_item_icon(GOPHER_ITEM_DIRECTORY));
-	#endif
 	printf("/");
 	printf("</a>\r\n");
+
+	//printf("<a id=\"navroot\" title=\"go to root of server\" ");
+	//#ifdef USE_REWRITE
+	//	printf("href=\"%s\">", REWRITE_ROOT);
+	//#else
+	//	printf("href=\"?\">");
+	//#endif
+	//#ifdef GOPHER_ICONS
+	//	printf("<img class=\"gicon\" src=\"%s\" alt=\"/\"> ", gopher_item_icon(GOPHER_ITEM_DIRECTORY));
+	//#endif
+	//printf("/");
+	//printf("</a>\r\n");
 
 	#ifdef HTML_TEXT
 	if (type == GOPHER_ITEM_PLAIN_TEXT) {
